@@ -1,0 +1,18 @@
+1.SELECT SUM(purchase_amount) AS Totalpurchase_amount FROM table;
+
+2.SELECT * FROM table
+WHERE date_visited ="2021-02-01" AND purchase_amount >"1000";
+
+3.SELECT MIN(purchase_amount) AS lowestamount
+FROM table;
+
+SELECT MAX(purchase_amount) AS highestamount
+FROM table;
+
+4.SELECT date_visited,SUM(purchase_amount) 
+FROM Table
+GROUP by date_visited
+ORDER by date_visited;
+
+5.SELECT User_id, SUM(purchase_amount) FROM Table
+GROUP by date_visited
